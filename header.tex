@@ -1,0 +1,8 @@
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{\leftmark} % Puts the current section (policy title) in the left header
+\fancyfoot[C]{\thepage} % Puts the page number in the center footer
+\renewcommand{\headrulewidth}{0.4pt} % Adds a line under the header
+\renewcommand{\footrulewidth}{0pt}
+\let\oldsection\section
+\renewcommand{\section}{\clearpage\oldsection} % Starts each new section on a new page
